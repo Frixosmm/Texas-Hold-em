@@ -94,5 +94,6 @@ def Value_cards(cards):
             if counts_store[i-1]==4:
                 value=value+i*10
             elif counts_store[i-1]==1:
-                value=value+i    
+                value=value+i
     return value
+#TODO# Value returned cannot be 0. It must atleast be the value of highest card?
