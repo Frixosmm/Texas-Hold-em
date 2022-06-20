@@ -353,7 +353,7 @@ for p in participant:
     for k in table_cards: #collect table cards + player cards for valuation
         temp1.append(k)
         #print(k)
-    if p.turn==-1:
+    if p.turn==-1:  #if out of game
         p.value=-1
     else:
         print("Player",p.name,"has")
