@@ -1,6 +1,7 @@
     
 def Value_cards(cards):
     value=0
+    # TODO# Value returned cannot be 0. It must atleast be the value of highest card?
     cards_value=[0,0,0,0,0]
     cards_suit=[0,0,0,0,0]
     for x in range(0,5):
@@ -31,10 +32,10 @@ def Value_cards(cards):
                         straight=True 
                         value=4000
                         value=value+sorted_cards[4]
-                        print("straight")
+                        #print("straight")
                         
         if cards_suit[0]==cards_suit[1]==cards_suit[2]==cards_suit[3]==cards_suit[4]:
-            print("flush")
+            #print("flush")
             value=5000
             for i in sorted_cards:
                 value=value+i
@@ -45,10 +46,10 @@ def Value_cards(cards):
 
         if flush==True and straight==True:
             value=8000
-            print("straight flush")      
+            #print("straight flush")
             if cards_value.count(14)==1:
                 value=10000
-                print("royal flush! HOLY SHIT!")
+                #print("royal flush! HOLY SHIT!")
     
  #####################MIXED VALUES (all other combos)######################    
     elif counts_store.count(2)==1:
@@ -59,7 +60,7 @@ def Value_cards(cards):
                     value=value+i*10   ###the triple is valued higher than double
                 elif counts_store[i-1]==2:
                     value=value+i
-            print("full house")
+            #print("full house")
         else:
             value=1000
             for i in range(1,15):
@@ -67,10 +68,10 @@ def Value_cards(cards):
                     value=value+i*10
                 elif counts_store[i-1]==1:
                     value=value+i
-            print("one pair")
+            #print("one pair")
         
     elif counts_store.count(2)==2:
-        print("two_pairs")
+        #print("two_pairs")
         value=2000
         for i in range(1,15):
             if counts_store[i-1]==2:
@@ -80,7 +81,7 @@ def Value_cards(cards):
 
     elif counts_store.count(3)==1:
         value=3000
-        print("three of a kind")
+        #print("three of a kind")
         for i in range(1,15):
             if counts_store[i-1]==3:
                 value=value+i*10
@@ -89,11 +90,10 @@ def Value_cards(cards):
     
     elif counts_store.count(4)==1:
         value=7000
-        print("four of a kind")
+        #print("four of a kind")
         for i in range(1,15):
             if counts_store[i-1]==4:
                 value=value+i*10
             elif counts_store[i-1]==1:
                 value=value+i
     return value
-#TODO# Value returned cannot be 0. It must atleast be the value of highest card?

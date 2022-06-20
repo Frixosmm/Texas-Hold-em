@@ -25,9 +25,11 @@ def Best_cards(cards):
     k=combinations(cards,5) #when played_cards=7 this is 7 choose 5 so we can use it to find the hand with the highest value
     best_value=0
     best_cards=cards[0:5]
+
     for combo in k:
         temp=Value_cards(combo)
         if temp > best_value:
             best_value=temp
             best_cards=combo
+
     return best_cards,best_value        

@@ -356,8 +356,7 @@ for p in participant:
     if p.turn==-1:  #if out of game
         p.value=-1
     else:
-        print("Player",p.name,"has")
         p.cards,p.value=list(Best_cards(temp1)).copy()
-
+        print("Player",p.name,"has score",p.value,", with cards",p.cards)
 
 
