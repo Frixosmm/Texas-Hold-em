@@ -4,11 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="230105f8-960c-4691-a1d8-36b1ff6c5eb6" name="Changes" comment="Minor print removals.">
-      <change afterPath="$PROJECT_DIR$/Decide_move.py" afterDir="false" />
+    <list default="true" id="230105f8-960c-4691-a1d8-36b1ff6c5eb6" name="Changes" comment="Minimum value for Value_cards.py is fixed.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Poker.py" beforeDir="false" afterPath="$PROJECT_DIR$/Poker.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Value_cards.py" beforeDir="false" afterPath="$PROJECT_DIR$/Value_cards.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Decide_move.py" beforeDir="false" afterPath="$PROJECT_DIR$/Decide_move.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -84,7 +82,7 @@
       <updated>1655747923248</updated>
       <workItem from="1655747927057" duration="3069000" />
       <workItem from="1655751482464" duration="2420000" />
-      <workItem from="1655839879459" duration="5537000" />
+      <workItem from="1655839879459" duration="8485000" />
     </task>
     <task id="LOCAL-00001" summary="Minor print removals.">
       <created>1655753216671</created>
@@ -93,7 +91,14 @@
       <option name="project" value="LOCAL" />
       <updated>1655753216671</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Minimum value for Value_cards.py is fixed.">
+      <created>1655845717753</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1655845717753</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -112,7 +117,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Minor print removals." />
-    <option name="LAST_COMMIT_MESSAGE" value="Minor print removals." />
+    <MESSAGE value="Minimum value for Value_cards.py is fixed." />
+    <option name="LAST_COMMIT_MESSAGE" value="Minimum value for Value_cards.py is fixed." />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/Texas_Hold_em$Poker.coverage" NAME="Poker Coverage Results" MODIFIED="1655841363814" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
