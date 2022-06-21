@@ -19,6 +19,8 @@ pot = 0
 number_of_players = 5
 A = [starting_money, 0]
 players = A * number_of_players
+
+
 playing_cards = Draw_cards(5 + 2 * number_of_players)
 # print("playing cards are")
 # print(playing_cards)
@@ -37,8 +39,8 @@ for i in range(0, number_of_players):  # deal cards
 # print(tempo) ###tempo contains 7 cards available to player
 
 #################New Game###########################
-
-
+# TODO# Play mock games to check game states are not corrupted
+# TODO# Fix user error codes to penalise/deal with wrong input (raise,check etc)
 # TODO# Create players and assign starting states in a scalable way
 p0 = make_player("Dealer", starting_money, 0, 2, players[1])
 p1 = make_player("Small", starting_money - small_blind, small_blind, 3, players[3])
@@ -359,4 +361,16 @@ for p in participant:
         p.cards,p.value=list(Best_cards(temp1)).copy()
         print("Player",p.name,"has score",p.value,", with cards",p.cards)
 
+
+temp1=0
+winner=participant[0]
+
+for p in participant:
+    if p.value>temp1:
+        temp1=p.value
+        winner=p
+print(winner.name,"has won, with card score:",winner.value,".The pot was",pot)
+winner.money+= pot
+
+pot=0 #???
 

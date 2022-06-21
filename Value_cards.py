@@ -1,7 +1,6 @@
     
 def Value_cards(cards):
     value=0
-    # TODO# Value returned cannot be 0. It must atleast be the value of highest card?
     cards_value=[0,0,0,0,0]
     cards_suit=[0,0,0,0,0]
     for x in range(0,5):
@@ -19,7 +18,7 @@ def Value_cards(cards):
                         #if there are 2 "2" and 2 "2" there are two pairs        
     #print(counts_store)
     sorted_cards=sorted(cards_value)
-
+    value=sorted_cards[-1] #Minimum value equal to high card?
     
  #####################IF ALL CARDS HAVE DIFFERENT VALUES(str,fl,strfl#############       
     if counts_store.count(1)==5:
